@@ -135,6 +135,7 @@ export declare class Godwoken {
 
   ping(): Promise<'pong'>;
   getTipBlockHash(): Promise<Hash>;
+  getTipBlockNumber(): Promise<Uint64>;
   getBlockHash(block_number: Uint32): Promise<Hash>;
   getBlock(block_hash: Hash): Promise<L2Block>;
   getBlockByNumber(block_number: Uint32): Promise<L2Block>;
